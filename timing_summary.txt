@@ -1,0 +1,25 @@
+============================================================
+Runtime per 100 test instances (seconds)
+============================================================
+
+Per-model breakdown at d=10:
+model      DTREE    LR   MLP
+method                      
+BF-SHAP     1.47  1.46  4.53
+Breakdown   0.07  0.05  0.07
+LIME        0.25  0.26  0.29
+MAPLE       9.30  8.79  9.44
+SHAP        0.62  0.59  1.08
+
+Dimensionality scaling (MLP):
+            d=5   d=10  d=50
+method                      
+BF-SHAP    0.29   4.73   NaN
+Breakdown  0.04   0.08  0.36
+LIME       1.86   0.28  0.38
+MAPLE      9.94  10.30  9.40
+SHAP       0.31   1.14  1.54
+SHAPR      5.01    NaN   NaN
+
+Note: SHAPR intractable at d=10 (>22 hours observed in benchmark).
+BF-SHAP intractable at d>10 (2^d coalitions required).

@@ -1,0 +1,12 @@
+Please do the following exactly:
+
+1. Create a new file called "run_experiments_B.py" in the project root folder with the content I will paste below.
+
+2. After creating the file, run it using:
+   .venv\Scripts\python.exe run_experiments_B.py
+
+3. Leave it running — it will take several hours. Do not close the terminal.
+
+4. When it finishes, zip the results/csv/ folder and send it back.
+
+--- PASTE THE FULL CONTENT OF run_experiments_B.py BELOW THIS LINE ---

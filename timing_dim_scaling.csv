@@ -1,0 +1,19 @@
+method,dim,per_100_s
+SHAP,5,0.31
+BF-SHAP,5,0.287
+LIME,5,1.863
+MAPLE,5,9.94
+Breakdown,5,0.038
+SHAP,10,1.142
+BF-SHAP,10,4.727
+LIME,10,0.28
+MAPLE,10,10.302
+Breakdown,10,0.083
+SHAP,50,1.54
+BF-SHAP,50,N/A (intractable)
+LIME,50,0.385
+MAPLE,50,9.395
+Breakdown,50,0.356
+SHAPR,5,5.01
+SHAPR,10,>79200 (observed)
+SHAPR,50,N/A (intractable)

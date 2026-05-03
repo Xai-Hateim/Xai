@@ -1,0 +1,23 @@
+{
+    "dataset": {
+        "name": "gaussianLinear",
+        "data_kwargs": {
+            "mu": "np.zeros(5)",
+            "dim": 5,
+            "rho": 0.5,
+            "weight": "np.arange(5 - 1, -1, -1)",
+            "noise": 0.01,
+            "num_train_samples": 200,
+            "num_val_samples": 50
+        }
+    },
+    "models": [
+        { "name": "lr", "model_kwargs": {} }
+    ],
+    "explainers": [
+        { "name": "random", "expl_kwargs": {} },
+        { "name": "shap", "expl_kwargs": {} }
+    ],
+    "metrics": ["faithfulness"],
+    "conditional": "observational"
+}

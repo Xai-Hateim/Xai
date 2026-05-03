@@ -235,7 +235,7 @@ def draw_page(dim, data, output_dir):
     )
 
     fig.suptitle(
-        f"XAI-Bench Results  |  dim = {dim}  |  Averaged across LR, DTREE, MLP",
+        f"Results  |  dim = {dim}  |  Averaged across LR, DTREE, MLP",
         fontsize=12, fontweight="bold", y=1.01,
     )
     fig.tight_layout(rect=[0, 0.04, 1, 1])

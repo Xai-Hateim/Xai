@@ -1,5 +1,5 @@
 # Renames the Desktop folder that CONTAINS this repo (the Arabic-named parent
-# of xai-bench-main) to "hateem dodo".
+# of this project folder) to "hateem dodo".
 #
 # Windows will refuse if anything has this folder open (Cursor, terminals,
 # Explorer inside the folder). Close Cursor / other apps using the path, then:

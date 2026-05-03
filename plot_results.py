@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot XAI-Bench CSV outputs written by `parse_utils.save_results_csv`."""
+"""Plot CSV outputs written by `parse_utils.save_results_csv`."""
 
 from __future__ import annotations
 
@@ -123,7 +123,7 @@ def _plot_one_csv(path: str, output_dir: str) -> str | None:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Plot XAI-Bench CSV results.")
+    ap = argparse.ArgumentParser(description="Plot benchmark CSV results.")
     ap.add_argument(
         "--results-dir",
         default="results/",

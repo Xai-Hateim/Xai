@@ -2,7 +2,7 @@
 run_experiments_A.py  -  YOUR MACHINE  (i7-10700K, 7 workers)
 Runs d=50 experiments.
 NOTE: shapley and shapley_corr metrics are excluded at d=50
-because XAI-Bench ground-truth computation requires 2^d memory,
+because exact ground-truth Shapley computation requires 2^d memory,
 which is physically impossible above d~25.
 Metrics computed: faithfulness, roar_faithfulness, roar_monotonicity,
                   monotonicity, infidelity

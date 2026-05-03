@@ -1,7 +1,7 @@
 """
 run_all_experiments.py
 ======================
-Runs xai-bench for all dataset × rho combinations needed for the paper.
+Runs all dataset × rho combinations needed for the paper.
 Just run:  python run_all_experiments.py
 Let it run overnight — it will produce all 15 CSVs in results/csv/
 
@@ -10,7 +10,7 @@ Total estimated time: 8-15 hours depending on your machine.
 
 import json, subprocess, sys, os, time, copy
 
-# ── Base config (matches your exact xai-bench format) ────────────────────────
+# ── Base config (matches the experiment JSON format) ────────────────────────
 BASE_CONFIG = {
     "models": [
         {"name": "lr",    "model_kwargs": {}},
@@ -143,7 +143,7 @@ def main():
     if failed:
         print(f"Failed runs: {', '.join(failed)}")
     print(f"Total time: {(time.time()-overall_start)/60:.0f} minutes")
-    print(f"\nNow run: python plot_xaibench.py --results-dir results/csv/")
+    print(f"\nNow run: python plot_results.py --results-dir results/csv/")
     print(f"{'='*65}")
 
 
